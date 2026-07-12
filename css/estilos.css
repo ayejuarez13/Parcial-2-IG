@@ -1,0 +1,100 @@
+* { 
+	box-sizing: border-box; } /*para respetar mejor el tamaño de las columnas*/ 
+
+
+h1,h2,h3{
+    font-family: arvo, serif;
+}
+
+body {
+    background-image: url(../imagenes/fondo.png);
+    display: flex; /* activa flexbox para centrar el contenedor*/
+	justify-content: center;
+}
+
+
+#contenedor {
+    max-width: 75rem;
+    background: #6bb8df;
+}
+
+header {
+	background: rgb(255, 255, 255);
+	text-align: center;
+    padding: 1rem;
+	margin: 1rem; /*separa el header del contenedor para que no este pegado*/
+}
+
+
+section {
+	background: rgb(255, 255, 255);
+    padding: 1rem;
+	margin: 1rem; /*separa el section del contenedor para que no este pegado*/
+}
+
+article {
+	background-color: #0a50b2;
+    padding: 1rem;
+	margin: 1rem;
+}
+
+footer{
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+    
+nav li {
+    margin: 1rem; /*separa li*/
+} 
+
+nav a {
+    padding: 0rem 3rem; /*separa enlaces de menu y hace que el area de click sea mas grande*/
+}
+
+.columnas1, .columnas2{
+    display: flex;
+
+}
+
+.columnas2-uno {
+    width: 30%;
+}
+
+.columnas2-dos {
+    width: 70%;
+}
+
+
+
+img {
+    display: block;
+    max-width: 100%; /*limite de ancho de la imagen*/
+    height: auto; /*se achica proporcionalmente, sin deformarse*/
+    margin: 1rem auto; 
+}
+
+.imagen1 {
+    width: 40rem;
+}
+
+
+nav a:link { /*link no visitado*/
+    color: black;
+}
+
+nav a:visited { /*link visitado*/
+    color: purple;
+}
+
+nav a:hover { /*link cuando paso el mouse por encima*/
+    color: red;
+}
+
+nav a:active { /*link al hacer click*/
+    color: orange;
+}
